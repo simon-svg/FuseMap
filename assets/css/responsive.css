@@ -1,0 +1,196 @@
+@media screen and (max-width: 1200px) {
+    .home{
+        height: auto;
+    }
+    .header .container-fluid{
+        padding: 0 !important;
+    }
+    .footer__nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer .row{
+        align-items: center;
+    }
+    .footer_icons{
+        margin: 0;
+        padding: 0;
+        justify-content: space-between;
+    }
+}
+@media screen and (max-width: 992px) {
+    .navbar_respons{
+        padding: 30px 15px;
+    }
+    .sub-m-main{
+        margin: 0;
+    }
+    .header__item{
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
+    .header__item_hide{
+        position: unset;
+        opacity: 1;
+        visibility: visible;
+        border: none;
+        box-shadow: none;
+        margin-left: 30px !important;
+    }
+    .header__item_hide a{   
+        color: #777a7a !important;
+        text-align: start;
+    }
+    .header__item_hide_triangle{
+        display: none;
+    }
+    .navbar__link{
+        align-items: baseline;
+        margin: 0 -15px;
+        background-color: #fff !important;
+    }
+    .header__login{
+        padding: 0;
+    }
+    .header__login a{
+        color: #101113 !important;
+    }
+    .header__login_link::after{
+        background-color: #101113;
+    }
+    .header__login_get{
+        border: 1px solid #101113;
+    }
+    .header__item > a{
+        color: black !important;
+    }
+    .home__container{
+        flex-direction: column;
+    }
+    .home__img{
+        width: 100%;
+        margin: 0;
+    }
+    .home__title h1 {
+        font-size: 39px;
+        line-height: 55px;
+    }
+    .solution__tabs_cont_itemb{
+        border: 1px solid #BDC0C7 !important;
+    }
+    .solution__tabs_cont_itemb::after,
+    .advantage__analytics_bg,
+    .advantage__savings_bg,
+    .advantage__cutting_bg,
+    .advantage__security_bg{
+        display: none !important;
+    }
+    .advantage__Savings,
+    .advantage__cutting{
+        margin: 0;
+    }
+    .advantage__img{
+        display: flex;
+        justify-content: center !important;
+        margin-top: 50px;
+    }
+    .advantage__img img{
+        width: 70%;
+    }
+    .advantage__Savings,
+    .advantage__security{
+        flex-direction: column-reverse;
+    }
+    .register_container{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .footer_icons {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer_icon{
+        margin-left: 30px;
+    }
+    .footer_icon:nth-child(4){
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width: 983px) {
+    .footer_icon:nth-child(3){
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .home__title h1 {
+        line-height: 43px;
+        font-size: 30px;
+    }
+    .information_title h2,
+    .register__title{
+        font-size: 30px;
+    }
+    .home__title h2,
+    .information_subtitle h3,
+    .register__par{
+        font-size: 14px;
+    }
+    .title h2{
+        font-size: 22px;
+    }
+    .footer{
+        height: auto;
+    }
+    .footer__row{
+        flex-direction: column;
+    }
+    .footer__inputs {
+        justify-content: center !important;
+    }
+    .footer__row > nav{
+        padding: 20px 0;
+    }
+    .footer_icons {
+        margin: 10px 0;
+    }
+    .footer_icon:nth-child(3),
+    .footer_icon:nth-child(4){
+        margin-top: 0;
+    }
+
+    .footer__nav{
+        flex-direction: unset;
+        justify-content: center !important;
+    }
+    .footer__nav_item{
+        margin-left: 10px;
+    }
+    .footer__nav_item:nth-child(1){
+        margin: 0;
+    }
+    .footer__nav_item a{
+        font-size: 11px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .solution__tabs_cont_itemb{
+        border-left: none !important;
+        border-right: none !important;
+    }
+}
+@media screen and (max-width: 420px) {
+    .footer__nav{
+        flex-direction: column;
+    }
+    .footer_icon a{
+        width: 30px;
+        height: 30px;
+    }
+    .footer_icon i,
+    .footer_icon a{
+        font-size: 14px;
+    }
+    .footer__bottom_h3{
+        font-size: 11px;
+    }
+}
