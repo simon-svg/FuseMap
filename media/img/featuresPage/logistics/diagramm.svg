@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 19.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+<polyline style="fill:none;stroke:#4E7AB5;stroke-width:2;stroke-miterlimit:10;" points="21,20.03 15,20 12,8 7,32 4,20 0,19.976 
+	"/>
+<g>
+	<circle style="fill:#8BB7F0;" cx="21" cy="20.03" r="2.5"/>
+	<path style="fill:#4E7AB5;" d="M21,18.03c1.103,0,2,0.897,2,2s-0.897,2-2,2s-2-0.897-2-2S19.897,18.03,21,18.03 M21,17.03
+		c-1.657,0-3,1.343-3,3c0,1.657,1.343,3,3,3c1.657,0,3-1.343,3-3C24,18.374,22.657,17.03,21,17.03L21,17.03z"/>
+</g>
+<path style="fill:#4E7AB5;" d="M21,12.03v2c3.308,0,6,2.692,6,6s-2.692,6-6,6v2c4.418,0,8-3.582,8-8
+	C29,15.612,25.418,12.03,21,12.03z"/>
+<path style="fill:#8BB7F0;" d="M21,7.03v2c6.065,0,11,4.935,11,11c0,6.065-4.935,11-11,11v2c7.18,0,13-5.82,13-13
+	C34,12.851,28.18,7.03,21,7.03z"/>
+<path style="fill:#C2E8FF;" d="M21,2.03v2c8.822,0,16,7.178,16,16c0,8.822-7.178,16-16,16v2c9.941,0,18-8.059,18-18
+	C39,10.089,30.941,2.03,21,2.03z"/>
+</svg>

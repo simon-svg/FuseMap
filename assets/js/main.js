@@ -1,5 +1,3 @@
-
-
 window.addEventListener("scroll", () => {
     const position = window.innerHeight / 1.5;
 

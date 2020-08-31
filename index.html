@@ -4,30 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fusemap main page welcome to</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="media/fonts/fonts.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-        crossorigin="anonymous"></script>
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-    <script src="assets/js/main.js" defer></script>
-    <title>Fusemap main page</title>
+
+
 </head>
 
 <body>
+
+    <div class="loader">
+        <div class="loader__gif">
+            <img src="media/img/loader.png" alt="loader">
+        </div>
+    </div>
+
     <header class="header">
         <div class="container-fluid">
             <nav class="header__navbar navbar navbar-expand-lg navbar-light bg-light">
-                <a href="#" class="navbar__logo">
+                <a href="index.html" class="navbar__logo">
                     <img src="media/img/header/logo.png" alt="logo">
                     <span>Powered by Emissions Consult</span>
                 </a>
@@ -48,12 +46,12 @@
                                 <ul>
                                     <div class="header__item_hide_triangle"></div>
                                     <li><a class="nav-link" href="#">What is FuseMap</a></li>
-                                    <li><a class="nav-link" href="#">Features</a></li>
+                                    <li><a class="nav-link" href="features.html">Features</a></li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Technology</a>
+                                        <a class="nav-link" href="technology.html">Technology</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Resources</a>
+                                        <a class="nav-link" href="resources.html">Resources</a>
                                     </li>
                                 </ul>
                             </div>
@@ -63,8 +61,8 @@
                             <div class="header__item_hide">
                                 <ul>
                                     <div class="header__item_hide_triangle"></div>
-                                    <li><a class="nav-link" href="#">AI solutions for buildings</a></li>
-                                    <li><a class="nav-link" href="#">AI solutions for industry</a></li>
+                                    <li><a class="nav-link" href="buildings.html">AI solutions for buildings</a></li>
+                                    <li><a class="nav-link" href="industry.html">AI solutions for industry</a></li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="#">Energy management consulting</a>
                                     </li>
@@ -72,12 +70,12 @@
                             </div>
                         </li>
                         <li class="header__item nav-item">
-                            <a class="nav-link" href="#">contact us</a>
+                            <a class="nav-link" href="contact.html">contact us</a>
                         </li>
                     </ul>
                     <div class="header__login">
-                        <a href="#" class="header__login_link">login</a>
-                        <a href="#" class="header__login_get">get started</a>
+                        <a href="login.html" class="header__login_link">login</a>
+                        <a href="request.html" class="header__login_get">get started</a>
                     </div>
                 </div>
             </nav>
@@ -86,10 +84,10 @@
     <main>
         <section class="home d-flex align-items-center">
             <div class="container-fluid home__container d-flex align-items-center justify-content-center">
-                <div class="home__img">
+                <div class="home__img col-lg-7">
                     <img src="media/img/home/display.png" alt="display">
                 </div>
-                <div class="home__content">
+                <div class="home__content col-lg-6">
                     <div class="home__title">
                         <h1>The Leading AI Solution For Buildings & Industry</h1>
                         <h2>FuseMap is a cloud-based, end-to-end flexible smart solution that uses artificial
@@ -97,13 +95,30 @@
                             to manage complex operational aspects of buildings and industry on a real-time basis.</h2>
                     </div>
                     <div class="d-flex justify-content-center">
-                        <a href="#" class="home__try">try it now</a>
-                        <a class="home__how" href="#">
+                        <a href="request.html" class="home__try">try it now</a>
+                        <a class="home__how" href="#" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
                             <span class="d-flex justify-content-center align-items-center">
                                 <i class="fas fa-caret-right"></i>
                             </span> How It Works
                         </a>
                     </div>
+
+                    <!-- it`s a modal -->
+
+                    <div class="modal fade home__modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body home__video">
+                              <video src="media/img/home/v.mp4" controls></video>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                 </div>
             </div>
         </section>
@@ -382,54 +397,57 @@
                 </div>
             </div>
         </section>
-        <footer class="footer d-flex align-items-center">
-            <div class="container-fluid">
-                <div class="row footer__row">
-                    <nav class="col-lg-5 col-md-4 d-flex align-items-center">
-                        <ul class="footer__nav d-flex justify-content-between">
-                            <li class="footer__nav_item">
-                                <a href="#">
-                                    <img src="media/img/register/footer_icon.png" alt="footer_icon"
-                                        class="footer__nav_icon">
-                                    emissions consult
-                                </a>
-                            </li>
-                            <li class="footer__nav_item">
-                                <a href="#">contact</a>
-                            </li>
-                            <li class="footer__nav_item">
-                                <a href="#">privacy</a>
-                            </li>
-                            <li class="footer__nav_item">
-                                <a href="#">terms of use</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <div class="col-lg-4 col-md-5">
-                        <div class="footer__inputs d-flex justify-content-start">
-                            <input class="footer__join" type="text" placeholder="Join our mailing list">
-                            <input class="footer__send" type="submit" value="send">
+    </main>
+    <footer class="footer d-flex align-items-center">
+        <div class="container-fluid">
+            <div class="row footer__row">
+                <nav class="col-lg-5 col-md-4 d-flex align-items-center">
+                    <ul class="footer__nav d-flex justify-content-between">
+                        <li class="footer__nav_item">
+                            <a href="#">
+                                <img src="media/img/register/footer_icon.png" alt="footer_icon"
+                                    class="footer__nav_icon">
+                                emissions consult
+                            </a>
+                        </li>
+                        <li class="footer__nav_item">
+                            <a href="#">contact</a>
+                        </li>
+                        <li class="footer__nav_item">
+                            <a href="#">privacy</a>
+                        </li>
+                        <li class="footer__nav_item">
+                            <a href="#">terms of use</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="col-lg-4 col-md-5">
+                    <div class="footer__inputs d-flex justify-content-start">
+                        <div class="d-flex flex-column justify-content-center">
+                            <input class="footer__join" type="text" required>
+                            <label class="footer__join_label">Join our mailing list</label>
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3">
-                        <ul class="footer_icons d-flex">
-                            <li class="footer_icon">
-                                <a href="#">M</a>
-                            </li>
-                            <li class="footer_icon">
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            </li>
-                            <li class="footer_icon">
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                            </li>
-                            <li class="footer_icon">
-                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            </li>
-                        </ul>
+                        <input class="footer__send" type="submit" value="send">
                     </div>
                 </div>
+                <div class="col-lg-3 col-md-3">
+                    <ul class="footer_icons d-flex">
+                        <li class="footer_icon">
+                            <a href="#">M</a>
+                        </li>
+                        <li class="footer_icon">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li class="footer_icon">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li class="footer_icon">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </footer>
+        </div>
         <div class="footer__bottom">
             <div class="container">
                 <div class="row">
@@ -439,7 +457,19 @@
                 </div>
             </div>
         </div>
-    </main>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/loader.js"></script>
 </body>
 
 </html>
